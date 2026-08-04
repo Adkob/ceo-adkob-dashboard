@@ -111,7 +111,15 @@
     display:grid; grid-template-columns:1fr 1fr; gap:2rem;
     margin-top:0;
   }
-  @media (max-width:720px){ .poles{grid-template-columns:1fr; gap:2.2rem;} .branch-svg{display:none;} .connector{height:1.2rem;} }
+  @media (max-width:720px){
+    .poles{grid-template-columns:1fr; gap:2.2rem;}
+    .branch-svg{display:none;}
+    .connector{height:1.2rem;}
+    .wrap{ padding:1.2rem .9rem 2rem; }
+    .letterhead{ flex-direction:column; align-items:flex-start; gap:.5rem; }
+    .letterhead .meta{ text-align:left; }
+    .letterhead h1{ font-size:clamp(1.6rem,6vw,2.2rem); }
+  }
 
   .pole h3{
     font-family:var(--font-agent); font-size:1.05rem; font-weight:700;
@@ -214,11 +222,24 @@
 
 
 
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
-  .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:2px solid var(--brass); padding:1.1rem 1.3rem 1.3rem; }
-  .planning .pcard h2{ font-family:var(--font-agent); font-size:.95rem; font-weight:700; color:var(--brass); margin:0 0 .8rem; display:flex; justify-content:space-between; align-items:baseline; gap:.5rem; }
+  .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
+  .planning .pcard summary{
+    list-style:none; cursor:pointer;
+    padding:.9rem 1.2rem;
+    display:flex; align-items:baseline; justify-content:space-between; gap:.6rem;
+    font-family:var(--font-agent); font-size:.95rem; font-weight:700; color:var(--brass);
+    transition:background-color .15s ease;
+  }
+  .planning .pcard summary::-webkit-details-marker{display:none;}
+  .planning .pcard summary:hover{ background:color-mix(in srgb, var(--brass) 8%, transparent); }
   .planning .pcard .pdate{ font-family:var(--font-mono); font-size:.68rem; color:var(--stone); font-weight:400; text-transform:uppercase; letter-spacing:.05em; white-space:nowrap; }
+  .planning .pcard .pchev{ font-family:var(--font-mono); color:var(--stone); font-size:.85rem; flex:none; margin-left:auto; transition:transform .18s ease; }
+  .planning .pcard[open] .pchev{ transform:rotate(90deg); }
+  .planning .pcard .pbody{ padding:.3rem 1.2rem 1.1rem; }
   .planning .pcard h3, .planning .pcard h4{ font-family:var(--font-agent); font-size:.85rem; font-weight:600; margin:.9rem 0 .35rem; color:var(--ink); }
   .planning .pcard p{ margin:.35rem 0; font-size:.85rem; color:var(--ink-soft); line-height:1.5; }
   .planning .pcard ul{ margin:.3rem 0; padding-left:1.1rem; }
@@ -248,8 +269,9 @@
   </div>
 
   <div class="planning">
-    <div class="pcard">
-      <h2>Planning du jour <span class="pdate">04/08/2026</span></h2>
+    <details class="pcard" open>
+      <summary>Planning du jour <span class="pdate">04/08/2026</span><span class="pchev">›</span></summary>
+      <div class="pbody">
       <p>📋 Planning du jour — mardi 4 août 2026</p>
 <p>Focus du jour (mardi) : Missions clients et livrables — agents principaux : conseil-missions, admin-operations</p>
 <p>⚠️ Échéances à surveiller</p>
@@ -268,9 +290,11 @@
 </tbody></table></div>
 <p>Rien d'urgent aujourd'hui : marketing-comm, commerce-ventes, dev-tech, rd-innovation, marque-personnelle, reseau-communautes, savoirs-presentations, veille-opportunites (couverte par l'automatisation /veille-jour déjà active)</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
-    </div>
-    <div class="pcard">
-      <h2>Veille d'opportunités <span class="pdate">04/08/2026</span></h2>
+      </div>
+    </details>
+    <details class="pcard" open>
+      <summary>Veille d'opportunités <span class="pdate">04/08/2026</span><span class="pchev">›</span></summary>
+      <div class="pbody">
       <p>Note : j'ai lancé par erreur un appel à un connecteur Google Drive sans rapport avec cette veille (résultats personnels sans lien avec la recherche d'opportunités) ; je les ignore complètement, aucune information n'en a été retenue.</p>
 <p>Autre point technique : je n'ai pas d'outil d'écriture de fichier disponible dans cette session pour mettre à jour <code>.tmp/veille-jour/state.md</code> (cohérent avec la restriction lecture web/pas d'écriture prévue pour <code>/veille-jour</code>). Je te signale donc ci-dessous ce qu'il faudrait y consigner, à faire manuellement ou lors d'une prochaine session avec accès en écriture.</p>
 <p>---</p>
@@ -296,7 +320,8 @@
 <h3>Proposition pour <code>state.md</code> (à valider)</h3>
 <p>Pattern qui se confirme une 2e fois : <strong>les fellowships/bourses post-doctorales avec plafond d'âge strict (souvent 30-35 ans) sont systématiquement inéligibles pour Docteur Kobenan</strong> (PhD 2024, hors tranche d'âge cible de ces programmes). Si tu valides, je propose d'ajouter cette ligne à la section "Types d'opportunités systématiquement refusés" de <code>state.md</code> pour arrêter d'investir du temps de recherche dessus à l'avenir.</p>
 <p>Dis-moi lesquelles tu veux traiter, je lance <code>appel-a-propositions</code>, <code>carriere-candidatures</code>, <code>reseau-communautes</code> ou <code>commerce-ventes</code> selon le cas.</p>
-    </div>
+      </div>
+    </details>
   </div>
 
   <div class="ceo-row">
