@@ -228,6 +228,8 @@
 
 
 
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -268,21 +270,56 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 06/08/2026
+      14 agents · 1 compétence<br>mis à jour 07/08/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">06/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">07/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>API Error: Unable to connect to API (ENOTFOUND)</p>
+      <p>📋 Planning du jour — vendredi 7 août 2026</p>
+<p>Focus du jour (vendredi) : Communication et visibilité — agents principaux : <code>marketing-comm</code>, <code>marque-personnelle</code> (skill <code>linkedin-writer</code>)</p>
+<p>⚠️ Échéances à surveiller</p>
+<ul>
+<li>Annexe A OMS (RFP/003/OMS/2026) — clôture <strong>10/08/2026, dans 3 jours</strong>. Correction v3 déjà livrée le 03/08, mais pas de confirmation en historique que le dossier corrigé a bien été redéposé</li>
+<li>ODEPA (Secrétaire Général) — dépôt physique, clôture <strong>25/08/2026, dans 18 jours</strong>. Reste à ta charge : date de naissance, téléphone, date de la lettre, 3 pièces administratives manquantes</li>
+<li>AfrEA 2026 — notification d'acceptation le 10/09/2026 (pas urgent, à surveiller seulement)</li>
+</ul>
+<p>Propositions par département</p>
+<div class="ptable-wrap"><table>
+<thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
+<tr><td>`appel-a-propositions`</td><td>Confirmer si l'Annexe A OMS corrigée (v3) a bien été redéposée ; sinon, le faire aujourd'hui en priorité</td><td>Clôture dans 3 jours, correction déjà prête mais statut de dépôt non confirmé</td></tr>
+<tr><td>`marketing-comm`</td><td>Rédiger un post LinkedIn cabinet + visuel (skills `linkedin-writer` + `contenu-designer`) annonçant le lancement bêta de CultureDash</td><td>Objectif actif "supports de lancement CultureDash" ; bêta proposée aux 3 espaces depuis le 04/08 sans communication associée signalée à ce jour</td></tr>
+<tr><td>`marque-personnelle`</td><td>Lancer un cadrage rapide (skill `brainstorming`) pour définir la direction de l'identité visuelle personnelle</td><td>Objectif actif "finaliser l'identité visuelle" sans avancement récent signalé, jour communication</td></tr>
+</tbody></table></div>
+<p>Rien d'urgent aujourd'hui :</p>
+<ul>
+<li><code>dev-tech</code> (jour dédié = mercredi ; CultureDash sans dev custom au lancement ; AAP Assistant Jalon E toujours en pause depuis le 26/07)</li>
+<li><code>rd-innovation</code> (jour dédié = mercredi)</li>
+<li><code>commerce-ventes</code> (jour dédié = lundi)</li>
+<li><code>conseil-missions</code> — ⚠️ à signaler : la fiche liste DEPAC 3 et FASOVEIL comme mandats actifs, alors que CONTEXT.md les indique toutes deux achevées (DEPAC 3 fin de projet août-sept. 2025, FASOVEIL juin 2025). Fiche à mettre à jour, pas d'action de fond aujourd'hui</li>
+<li><code>admin-operations</code> — même remarque : vérifier si la facturation DEPAC 3/FASOVEIL est soldée puisque les missions sont closes</li>
+<li><code>carriere-candidatures</code> (jour dédié = jeudi ; ODEPA déjà couvert en échéance transversale)</li>
+<li><code>reseau-communautes</code> (jour dédié = jeudi ; AfrEA pas encore au stade de notification)</li>
+<li><code>savoirs-presentations</code> — fiche mentionne encore "5 ateliers" Africalia, alors que CONTEXT.md confirme 6 depuis le 03/08. À corriger, pas d'action de fond aujourd'hui</li>
+<li><code>veille-opportunites</code> (jour dédié = jeudi ; le state file <code>.tmp/veille-jour/state.md</code> n'a jamais encore été alimenté, à garder en tête sans en faire une urgence)</li>
+</ul>
+<p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">06/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">07/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>API Error: Unable to connect to API (ENOTFOUND)</p>
+      <h3>Veille Opportunités — 2026-08-07</h3>
+<p><strong>Résultat : aucune opportunité nouvelle et pertinente confirmée aujourd'hui.</strong></p>
+<p>J'ai scanné les sources prioritaires des deux pôles (bailleurs UE/Suisse/Banque mondiale, UNGM, ReliefWeb, AfDB, ODEPA/UA, plateformes emploi Burkina/Côte d'Ivoire, réseaux d'évaluation SCE/RF-Ee/EvalPartners, fonds culture ACP-UE). Beaucoup de résultats trouvés, mais tous se sont révélés soit expirés (dates limites déjà passées : Goethe Institut MEO_BUFA le 22/01/2025, CRI Burkina S&E le 03/01/2026, poste S&E Ouagadougou/LN International le 05/06/2026, fonds culture ACP-UE Afrique de l'Ouest 3e appel le 17/03/2022, bourses postdoctorales anthropologie déjà closes), soit non vérifiables avec certitude (documents PDF corrompus, pages bloquées en 403 sur AfDB et emploiburkina.com), soit hors profil (MERL Officer Plan International, poste basé en Éthiopie, expiré).</p>
+<p><strong>Une piste à vérifier vous-même, non incluse dans le tableau faute de date confirmée :</strong></p>
+<ul>
+<li><strong>AfDB — EOI Consultant Firm, système MERL centralisé pour ACFM & ACRIFA</strong> (mécanisme de financement agroalimentaire + assurance climatique). Un moteur de recherche indique une clôture autour du 24/08/2026, mais je n'ai pas pu confirmer directement (page bloquée en 403). Format cabinet/consortium, probablement d'une envergure au-dessus d'iMERL solo. Lien : https://www.afdb.org/fr/consultants/eoi-consultant-firm-design-and-operate-centralized-monitoring-evaluation-reporting-and-learning-merl-system-acfm-acrifa-ahfr-96039 — à consulter vous-même avant d'y investir du temps.</li>
+</ul>
+<p>Aucune entrée n'est ajoutée à <code>.tmp/veille-jour/state.md</code> (rien de confirmé à tracer). Un pattern commence à se dessiner sur trois exécutions : les recrutements S&E trouvés au Burkina Faso via recherche web générale sont systématiquement déjà clos au moment où je les découvre (décalage d'indexation). À valider avec vous si récurrent, avant de l'ajouter en "Patterns observés".</p>
+<p>Dis-moi lesquelles tu veux traiter, je lance <code>appel-a-propositions</code>, <code>carriere-candidatures</code>, <code>reseau-communautes</code> ou <code>commerce-ventes</code> selon le cas.</p>
       </div>
     </details>
   </div>
