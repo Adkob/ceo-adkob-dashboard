@@ -230,6 +230,8 @@
 
 
 
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -270,55 +272,62 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 07/08/2026
+      14 agents · 1 compétence<br>mis à jour 08/08/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">07/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">08/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — vendredi 7 août 2026</p>
-<p>Focus du jour (vendredi) : Communication et visibilité — agents principaux : <code>marketing-comm</code>, <code>marque-personnelle</code> (skill <code>linkedin-writer</code>)</p>
+      <p>📋 Planning du jour — samedi 8 août 2026</p>
+<p>Focus du jour (samedi) : le rythme hebdomadaire du CEO ne couvre que lundi à vendredi, aucun focus n'est défini pour le week-end. Je passe en revue les 12 agents au niveau standard, sans développer de focus particulier.</p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li>Annexe A OMS (RFP/003/OMS/2026) — clôture <strong>10/08/2026, dans 3 jours</strong>. Correction v3 déjà livrée le 03/08, mais pas de confirmation en historique que le dossier corrigé a bien été redéposé</li>
-<li>ODEPA (Secrétaire Général) — dépôt physique, clôture <strong>25/08/2026, dans 18 jours</strong>. Reste à ta charge : date de naissance, téléphone, date de la lettre, 3 pièces administratives manquantes</li>
-<li>AfrEA 2026 — notification d'acceptation le 10/09/2026 (pas urgent, à surveiller seulement)</li>
+<li>OMS (RFP/003/OMS/2026) — clôture <strong>10/08/2026, dans 2 jours</strong>. La correction (Annexe A/B v3) a été livrée le 2026-08-03, mais le statut de redépôt effectif n'est pas confirmé dans l'historique.</li>
+<li>ODEPA, candidature Secrétaire Général — dépôt physique <strong>25/08/2026, dans 17 jours</strong>. Pièces encore manquantes côté David : date de naissance, téléphone, date de la lettre, 3 pièces administratives (diplômes certifiés, CNI/passeport, casier judiciaire).</li>
+<li>AfrEA 2026 — notification d'acceptation <strong>10/09/2026</strong> (dans 33 jours), article complet le 30/09/2026 si accepté.</li>
 </ul>
 <p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>`appel-a-propositions`</td><td>Confirmer si l'Annexe A OMS corrigée (v3) a bien été redéposée ; sinon, le faire aujourd'hui en priorité</td><td>Clôture dans 3 jours, correction déjà prête mais statut de dépôt non confirmé</td></tr>
-<tr><td>`marketing-comm`</td><td>Rédiger un post LinkedIn cabinet + visuel (skills `linkedin-writer` + `contenu-designer`) annonçant le lancement bêta de CultureDash</td><td>Objectif actif "supports de lancement CultureDash" ; bêta proposée aux 3 espaces depuis le 04/08 sans communication associée signalée à ce jour</td></tr>
-<tr><td>`marque-personnelle`</td><td>Lancer un cadrage rapide (skill `brainstorming`) pour définir la direction de l'identité visuelle personnelle</td><td>Objectif actif "finaliser l'identité visuelle" sans avancement récent signalé, jour communication</td></tr>
+<tr><td>`appel-a-propositions`</td><td>Confirmer avec toi si le dossier OMS corrigé (v3) a bien été redéposé. Si non, le faire aujourd'hui : plus que 2 jours avant clôture.</td><td>Deadline la plus proche de tout le système, objectif actif explicite dans sa fiche.</td></tr>
+<tr><td>`carriere-candidatures`</td><td>Te relancer sur les éléments manquants du dossier ODEPA (date de naissance, téléphone, date de lettre, 3 pièces admin) avant que le délai ne se resserre.</td><td>Deadline 25/08, objectif actif, rien ne peut avancer sans ces éléments de ta part.</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui :</p>
-<ul>
-<li><code>dev-tech</code> (jour dédié = mercredi ; CultureDash sans dev custom au lancement ; AAP Assistant Jalon E toujours en pause depuis le 26/07)</li>
-<li><code>rd-innovation</code> (jour dédié = mercredi)</li>
-<li><code>commerce-ventes</code> (jour dédié = lundi)</li>
-<li><code>conseil-missions</code> — ⚠️ à signaler : la fiche liste DEPAC 3 et FASOVEIL comme mandats actifs, alors que CONTEXT.md les indique toutes deux achevées (DEPAC 3 fin de projet août-sept. 2025, FASOVEIL juin 2025). Fiche à mettre à jour, pas d'action de fond aujourd'hui</li>
-<li><code>admin-operations</code> — même remarque : vérifier si la facturation DEPAC 3/FASOVEIL est soldée puisque les missions sont closes</li>
-<li><code>carriere-candidatures</code> (jour dédié = jeudi ; ODEPA déjà couvert en échéance transversale)</li>
-<li><code>reseau-communautes</code> (jour dédié = jeudi ; AfrEA pas encore au stade de notification)</li>
-<li><code>savoirs-presentations</code> — fiche mentionne encore "5 ateliers" Africalia, alors que CONTEXT.md confirme 6 depuis le 03/08. À corriger, pas d'action de fond aujourd'hui</li>
-<li><code>veille-opportunites</code> (jour dédié = jeudi ; le state file <code>.tmp/veille-jour/state.md</code> n'a jamais encore été alimenté, à garder en tête sans en faire une urgence)</li>
-</ul>
+<p>Rien d'urgent aujourd'hui : <code>marketing-comm</code>, <code>commerce-ventes</code>, <code>dev-tech</code>, <code>rd-innovation</code>, <code>conseil-missions</code>, <code>admin-operations</code>, <code>marque-personnelle</code>, <code>reseau-communautes</code>, <code>savoirs-presentations</code>, <code>veille-opportunites</code> (veille déjà couverte automatiquement par <code>/veille-jour</code>, aucune action manuelle à ajouter).</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">07/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">08/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <h3>Veille Opportunités — 2026-08-07</h3>
-<p><strong>Résultat : aucune opportunité nouvelle et pertinente confirmée aujourd'hui.</strong></p>
-<p>J'ai scanné les sources prioritaires des deux pôles (bailleurs UE/Suisse/Banque mondiale, UNGM, ReliefWeb, AfDB, ODEPA/UA, plateformes emploi Burkina/Côte d'Ivoire, réseaux d'évaluation SCE/RF-Ee/EvalPartners, fonds culture ACP-UE). Beaucoup de résultats trouvés, mais tous se sont révélés soit expirés (dates limites déjà passées : Goethe Institut MEO_BUFA le 22/01/2025, CRI Burkina S&E le 03/01/2026, poste S&E Ouagadougou/LN International le 05/06/2026, fonds culture ACP-UE Afrique de l'Ouest 3e appel le 17/03/2022, bourses postdoctorales anthropologie déjà closes), soit non vérifiables avec certitude (documents PDF corrompus, pages bloquées en 403 sur AfDB et emploiburkina.com), soit hors profil (MERL Officer Plan International, poste basé en Éthiopie, expiré).</p>
-<p><strong>Une piste à vérifier vous-même, non incluse dans le tableau faute de date confirmée :</strong></p>
+      <p>Je n'ai pas accès à l'écriture de fichiers dans cette session (outils restreints à Read/Grep/Glob/WebSearch/WebFetch), donc je ne peux pas mettre à jour <code>.tmp/veille-jour/state.md</code> ni créer le snapshot du jour automatiquement. Je te donne le résultat ici, à toi de me dire si tu veux que je le consigne dans une session avec accès en écriture.</p>
+<h3>Veille Opportunités - 2026-08-08</h3>
+<h3>Opportunités identifiées</h3>
+<div class="ptable-wrap"><table>
+<thead><tr><th>#</th><th>Intitulé</th><th>Type</th><th>Commanditaire</th><th>Lieu</th><th>Date limite</th><th>Pertinence</th><th>Pôle</th><th>Agent</th><th>Lien</th></tr></thead><tbody>
+<tr><td>1</td><td>MEL Consultant — évaluation de référence AGIL4CUs (crédit mutualiste, MPME dirigées par femmes/jeunes)</td><td>AAP consultance</td><td>WOCCU (World Council of Credit Unions)</td><td>Kenya, Burkina Faso, Sénégal, Guatemala</td><td>Non précisée sur l'annonce, à confirmer directement</td><td>Forte</td><td>Cabinet</td><td>`appel-a-propositions`</td><td>[Devex](https://www.devex.com/jobs/monitoring-and-evaluation-consultancy-baseline-and-performance-evaluations-1188207)</td></tr>
+<tr><td>2</td><td>EOI Bureau d'études — Système MERL centralisé pour ACFM & ACRIFA (financement agri-PME et assurance climatique)</td><td>AAP (firme)</td><td>Banque africaine de développement (BAD)</td><td>Multi-pays Afrique</td><td>~21-24 août 2026 (deux pages BAD légèrement divergentes, à vérifier sur le lien)</td><td>Moyenne</td><td>Cabinet</td><td>`appel-a-propositions`</td><td>[BAD](https://www.afdb.org/en/consultants/eoi-consultant-firm-design-and-operate-centralized-monitoring-evaluation-reporting-and-learning-merl-system-acfm-acrifa-ahfr-96039)</td></tr>
+</tbody></table></div>
+<h3>Détail des opportunités à forte pertinence</h3>
+<h4>1. MEL Consultant — AGIL4CUs baseline assessment (WOCCU)</h4>
 <ul>
-<li><strong>AfDB — EOI Consultant Firm, système MERL centralisé pour ACFM & ACRIFA</strong> (mécanisme de financement agroalimentaire + assurance climatique). Un moteur de recherche indique une clôture autour du 24/08/2026, mais je n'ai pas pu confirmer directement (page bloquée en 403). Format cabinet/consortium, probablement d'une envergure au-dessus d'iMERL solo. Lien : https://www.afdb.org/fr/consultants/eoi-consultant-firm-design-and-operate-centralized-monitoring-evaluation-reporting-and-learning-merl-system-acfm-acrifa-ahfr-96039 — à consulter vous-même avant d'y investir du temps.</li>
+<li>Lien : https://www.devex.com/jobs/monitoring-and-evaluation-consultancy-baseline-and-performance-evaluations-1188207</li>
+<li>WOCCU recherche un cabinet/consultant MEL pour une évaluation de référence sur son projet AGIL4CUs, couvrant le Kenya, le Burkina Faso, le Sénégal et le Guatemala. Population cible : membres de coopératives de crédit et clients potentiels de MPME (dont agribusiness), avec un focus femmes/jeunes. Charge de travail estimée : ~35 jours ouvrés. Candidature par email à <code>consult@woccu.org</code>, objet "MEL Consultant-Evaluations".</li>
+<li>Pourquoi pertinent : match direct avec ton expertise S&E/GAR, ton terrain Burkina Faso, et ton positionnement inclusion (femmes/jeunes) déjà mobilisé sur FASOVEIL et Africalia.</li>
+<li>Point de vigilance : je n'ai pas pu confirmer la date limite exacte (page Devex bloquée en accès direct pour moi). À vérifier toi-même sur le lien avant de te lancer, le délai peut être court.</li>
+<li>Action recommandée : creuser en priorité, vérifier la deadline en premier, puis <code>appel-a-propositions</code> si le délai le permet.</li>
 </ul>
-<p>Aucune entrée n'est ajoutée à <code>.tmp/veille-jour/state.md</code> (rien de confirmé à tracer). Un pattern commence à se dessiner sur trois exécutions : les recrutements S&E trouvés au Burkina Faso via recherche web générale sont systématiquement déjà clos au moment où je les découvre (décalage d'indexation). À valider avec vous si récurrent, avant de l'ajouter en "Patterns observés".</p>
+<h4>2. EOI Bureau d'études — Système MERL centralisé ACFM & ACRIFA (BAD)</h4>
+<ul>
+<li>Lien : https://www.afdb.org/en/consultants/eoi-consultant-firm-design-and-operate-centralized-monitoring-evaluation-reporting-and-learning-merl-system-acfm-acrifa-ahfr-96039</li>
+<li>La BAD recherche un cabinet (ou consortium) pour concevoir et opérer un système MERL centralisé pour deux mécanismes de financement (agri-PME et assurance climatique). Deadline resserrée, dans les 2 à 3 semaines.</li>
+<li>Pourquoi c'est moins évident : c'est un contrat-cadre BAD à l'échelle panafricaine, probablement calibré pour un cabinet de taille bien supérieure à iMERL (multi-pays, systèmes de reporting institutionnels lourds). Je n'ai pas pu vérifier les critères d'éligibilité précis (page BAD bloquée pour moi en accès direct).</li>
+<li>Action recommandée : à ne creuser que si tu envisages un positionnement en sous-traitant/partenaire local plutôt qu'en tête de file. Sinon, probablement NO-GO réaliste.</li>
+</ul>
+<h3>Pistes vérifiées et écartées (délai expiré, non re-signalées en détail)</h3>
+<p>Plusieurs pistes issues des sources prioritaires (GIZ, WATAF, CRAterre, PNUD, UNFPA, Asmae Cap Jeunesse, ACP-UE Culture, EUNIC, AOCA) avaient des dates limites déjà passées à la vérification, donc écartées silencieusement comme convenu.</p>
+<p>Une piste a été écartée pour inéligibilité (pas pour délai) : le <strong>WBG Africa Fellowship Program 2027</strong> (Banque mondiale), deadline 25 août 2026 encore ouverte, mais limite d'âge stricte de 32 ans maximum au 1er janvier 2027, un critère déjà éliminatoire l'an dernier sur une bourse similaire. Je propose d'ajouter ce pattern à <code>.tmp/veille-jour/state.md</code> (récurrence de la Banque mondiale sur ce critère d'âge) pour ne plus y consacrer de temps de vérification à l'avenir. Confirme-moi si tu valides cette proposition.</p>
 <p>Dis-moi lesquelles tu veux traiter, je lance <code>appel-a-propositions</code>, <code>carriere-candidatures</code>, <code>reseau-communautes</code> ou <code>commerce-ventes</code> selon le cas.</p>
       </div>
     </details>
