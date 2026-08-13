@@ -239,6 +239,30 @@
 
 
 
+
+  /* Projets en cours (statique, à mettre à jour manuellement, hors zone balayée par build_dashboard.py) */
+  .projects{ margin-bottom:2.2rem; }
+  .projects .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
+  .projects .pcard summary{
+    list-style:none; cursor:pointer;
+    padding:.9rem 1.2rem;
+    display:flex; align-items:baseline; justify-content:space-between; gap:.6rem;
+    font-family:var(--font-agent); font-size:.95rem; font-weight:700; color:var(--brass);
+    transition:background-color .15s ease;
+  }
+  .projects .pcard summary::-webkit-details-marker{display:none;}
+  .projects .pcard summary:hover{ background:color-mix(in srgb, var(--brass) 8%, transparent); }
+  .projects .pcard .pdate{ font-family:var(--font-mono); font-size:.68rem; color:var(--stone); font-weight:400; text-transform:uppercase; letter-spacing:.05em; white-space:nowrap; }
+  .projects .pcard .pchev{ font-family:var(--font-mono); color:var(--stone); font-size:.85rem; flex:none; margin-left:auto; transition:transform .18s ease; }
+  .projects .pcard[open] .pchev{ transform:rotate(90deg); }
+  .projects .pcard .pbody{ padding:.3rem 1.2rem 1.1rem; }
+  .projects .ptable-wrap{ overflow-x:auto; margin:.4rem 0; }
+  .projects .pcard table{ border-collapse:collapse; width:100%; font-size:.78rem; }
+  .projects .pcard th, .projects .pcard td{ border:1px solid var(--line); padding:.4rem .55rem; text-align:left; vertical-align:top; }
+  .projects .pcard th{ background:var(--paper); color:var(--ink-soft); font-weight:700; font-family:var(--font-agent); }
+  .projects .pcard td{ font-size:.82rem; color:var(--ink-soft); line-height:1.45; }
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -368,6 +392,25 @@
             <div><dt>Color</dt><dd>gold</dd></div>
           </dl>
         </div>
+      </div>
+    </details>
+  </div>
+
+  <div class="projects">
+    <details class="pcard">
+      <summary>Projets en cours <span class="pdate">mis à jour 13/08/2026</span><span class="pchev">›</span></summary>
+      <div class="pbody">
+        <div class="ptable-wrap"><table>
+          <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
+          <tbody>
+            <tr><td>Marketing Copilot (SaaS ai-marketing-skills)</td><td>Cadrage entamé, stack Next.js + Supabase validée</td><td>Suite dans l'IDE Antigravity</td></tr>
+            <tr><td>Orange Money Burkina Faso</td><td>Contexte marque à reconstruire de zéro</td><td>Nouvelle session pour appliquer les 5 skills marketing/données</td></tr>
+            <tr><td>Diagnostic EC (espaces culturels La Fabrique)</td><td>Phase 1 livrée le 08/08/2026</td><td>Phase 2 : Next.js + Supabase</td></tr>
+            <tr><td>INSPIR'RH TPE Côte d'Ivoire</td><td>Cadrage pré-devis livré le 11/08/2026</td><td>En attente de retour client avant chiffrage</td></tr>
+            <tr><td>Kilé (SaaS génération de leads B2B Afrique)</td><td>Spec technique complète livrée le 12/08/2026</td><td>Construction à démarrer dans Antigravity (estimation 16-21 j)</td></tr>
+            <tr><td>Mockup MERL Dashboard</td><td>Maquette HTML 8 écrans publiée</td><td>Référence visuelle pour le dev Next.js</td></tr>
+          </tbody>
+        </table></div>
       </div>
     </details>
   </div>
