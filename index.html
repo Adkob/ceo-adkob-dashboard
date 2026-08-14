@@ -267,6 +267,9 @@
 
 
 
+
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -307,53 +310,54 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 13/08/2026
+      14 agents · 1 compétence<br>mis à jour 14/08/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">13/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">14/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — jeudi 13 août 2026</p>
-<p>Focus du jour (jeudi) : Réseau, candidatures, opportunités — agents principaux : <code>veille-opportunites</code>, <code>reseau-communautes</code>, <code>carriere-candidatures</code></p>
+      <p>📋 Planning du jour — vendredi 14 août 2026</p>
+<p>Focus du jour (vendredi) : Communication et visibilité — agents principaux : <code>marketing-comm</code>, <code>marque-personnelle</code>, <code>linkedin-writer</code></p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li>Candidature ODEPA (Secrétaire Général) — dépôt physique le <strong>25/08/2026</strong> (dans 12 jours). Pièces encore à charge de David : date de naissance, téléphone, date de la lettre, 3 pièces administratives (diplômes certifiés, CNI/passeport, casier judiciaire).</li>
-<li>Notification AfrEA 2026 (article soumis) — attendue le <strong>10/09/2026</strong> (dans 28 jours). Si accepté, article complet à soumettre le 30/09/2026.</li>
-<li>Point non confirmé : dossier OMS (RFP/003/OMS/2026, clôture était le 10/08/2026, donc déjà passée). La v3 corrigée a été livrée le 2026-08-03 mais aucune trace dans l'historique confirmant qu'elle a bien été redéposée avant clôture. À clarifier avec toi.</li>
+<li>Candidature ODEPA (Secrétaire Général) — dépôt physique le <strong>25 août 2026</strong> (dans 11 jours)</li>
+<li>Dossier OMS Annexe A (RFP/003/OMS/2026) — clôture indiquée au <strong>10/08/2026, déjà dépassée</strong>. La version corrigée (v3) avait été livrée le 03/08 mais son dépôt effectif n'a jamais été confirmé dans l'historique. À clarifier avec toi : déposée ou non ?</li>
+<li>AfrEA 2026 — notification d'acceptation le 10 septembre (pas urgent, 27 jours)</li>
 </ul>
 <p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>`veille-opportunites`</td><td>Lancer une veille complète (AAP + offres de recrutement) sur les deux pôles</td><td>C'est le jour dédié au rythme hebdomadaire, et `.tmp/veille-jour/state.md` indique "jamais encore mis à jour, première exécution en attente" — la mémoire cumulative n'a donc jamais été alimentée malgré l'automatisation `/veille-jour` censée tourner chaque matin. À vérifier si l'automatisation tourne bien.</td></tr>
-<tr><td>`carriere-candidatures`</td><td>Point sur les pièces manquantes du dossier ODEPA avec toi</td><td>Deadline dans 12 jours (25/08), et les 4 éléments encore ouverts (date de naissance, téléphone, date lettre, 3 pièces) dépendent uniquement de toi, pas d'un livrable à produire par l'agent</td></tr>
-<tr><td>`reseau-communautes`</td><td>Identifier 2-3 pistes de collaboration ou co-soumission (réseaux ReBuSE/SCE/EvalforEarth)</td><td>Objectif actif permanent ("identifier des opportunités de collaboration"), pas de date fixe mais c'est le jour dédié au réseau</td></tr>
+<tr><td>`marketing-comm`</td><td>Produire les supports de lancement bêta CultureDash pour les 3 espaces déjà choisis (Gambidi, Grâce Théâtre, Ateliers Maaneere)</td><td>Choix fait le 04/08, rien de lancé depuis 10 jours ; objectif actif de la fiche</td></tr>
+<tr><td>`commerce-ventes`</td><td>Envoyer l'offre bêta CultureDash 1 mois gratuit aux 3 mêmes espaces</td><td>Même blocage que marketing-comm, côté commercial cette fois</td></tr>
+<tr><td>`carriere-candidatures`</td><td>Vérifier avec toi si les pièces manquantes ODEPA (date de naissance, téléphone, date de lettre, 3 pièces administratives) sont réunies</td><td>Échéance dans 11 jours, dernier point resté "à ta charge" depuis le 04/08</td></tr>
+<tr><td>`dev-tech`</td><td>Finaliser la mise en ligne d'AAP Assistant (Vercel ou NAS UGREEN Docker)</td><td>Seule étape restante depuis le Lot 5 (13/08), rien d'autre ne bloque</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui : <code>marketing-comm</code>, <code>commerce-ventes</code>, <code>dev-tech</code>, <code>rd-innovation</code>, <code>admin-operations</code>, <code>marque-personnelle</code>, <code>savoirs-presentations</code></p>
-<p>Deux points à signaler au passage :</p>
+<p>Rien d'urgent aujourd'hui : <code>marque-personnelle</code> (objectif "identité visuelle" ouvert, pas d'échéance), <code>rd-innovation</code> (validation MERL Reporter en attente d'entretiens, aucun signalé), <code>reseau-communautes</code> (AfrEA pas encore urgent), <code>savoirs-presentations</code> (rien à produire tant qu'AfrEA n'est pas accepté), <code>veille-opportunites</code> (déjà couvert par <code>/veille-jour</code> automatique)</p>
+<p><strong>Deux points de fiches désynchronisées, pas d'action mais à corriger un jour :</strong></p>
 <ul>
-<li><code>conseil-missions</code> a pour objectif actif de "suivre DEPAC 3 et FASOVEIL", mais ces deux mandats semblent déjà achevés d'après <code>CONTEXT.md</code> (DEPAC-3 fin de projet août-sept. 2025, FASOVEIL clos juin 2025). Sa fiche mérite une mise à jour si tu confirmes qu'il n'y a plus de mandat S&E actif en cours.</li>
-<li><code>appel-a-propositions</code> a pour objectif actif "finaliser la correction de l'Annexe A OMS", déjà fait le 2026-08-03. Objectif à considérer comme clos ou à retirer de sa fiche, sous réserve de la clarification sur le dépôt final ci-dessus.</li>
+<li><code>conseil-missions</code> et <code>admin-operations</code> citent encore DEPAC-3/FASOVEIL comme mandats "actifs" à suivre, alors que <code>CONTEXT.md</code> les indique tous deux terminés (FASOVEIL juin 2025, DEPAC-3 fin de projet août-sept 2025)</li>
+<li><code>savoirs-presentations</code> cite "5 ateliers" Africalia, <code>CONTEXT.md</code> confirme 6 depuis le 03/08</li>
 </ul>
+<p>Je remarque aussi que les derniers commits git portent sur un projet <strong>"getc"</strong> (extraction du code vers <code>github.com/Adkob/getc-app</code> en privé, correctif de sécurité, test ngrok daté d'aujourd'hui) qui n'apparaît nulle part dans <code>CONTEXT.md</code>. Veux-tu que je mette à jour ce fichier pour l'intégrer à la liste des projets numériques ?</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">13/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">14/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <h3>Veille Opportunités — 2026-08-13</h3>
+      <h3>Veille Opportunités - 2026-08-14</h3>
 <h3>Opportunités identifiées</h3>
-<p>Aucune opportunité nouvelle, pertinente et exploitable trouvée aujourd'hui.</p>
-<h3>Détail du scan effectué</h3>
-<p>J'ai passé en revue les sources prioritaires des deux pôles (bailleurs UE/Suisse/UNICEF/Banque mondiale/AfDB, plateformes AAP, CEDEAO/UA, plateformes d'emploi S&E, réseaux d'évaluation, programmes culture ICC, financements automatisation/IA PME). Rien de retenu, pour les raisons suivantes :</p>
+<p>Aucune opportunité nouvelle et pertinente aujourd'hui.</p>
+<p>Sources scannées : bailleurs (UE, Banque mondiale, UNICEF), plateformes AAP (UNGM, ReliefWeb, DevEx), sites institutionnels culture (ACP-UE Culture, EUNIC), plateformes emploi (Emploi Burkina, Abidjan.net).</p>
+<p>Pistes examinées puis écartées silencieusement (délai déjà expiré ou hors profil/zone, non listées en détail conformément à la règle) : offres S&E à Ouagadougou et Tchad avec dates limites déjà passées (mars, juin, juillet 2026), appel à propositions culture destinés à des opérateurs/organisations (pas de mission de consultance individuelle), poste MEL basé à Kigali (hors zone prioritaire AOC, nécessite relocation).</p>
+<p><strong>Deux points techniques à signaler, pas des opportunités :</strong></p>
 <ul>
-<li><strong>Délais déjà passés</strong> (écartés silencieusement conformément à la règle, listés ici uniquement pour la transparence de la recherche, pas comme "opportunités") : AAU/Sahel RELANCE (spécialiste S&E, clôturait le 24/07/2026), AWA/ACP-UE Culture 3e appel (2022), AOCA 2026 (clôturé le 31/12/2025), EUNIC Spaces of Culture et Africa-Europe Partnerships for Culture (clôturaient en juin 2026), BCEAO/UEMOA RELANCE (2023).</li>
-<li><strong>Critères d'éligibilité non remplis</strong> : Ivoire Tech Next 15 et Ivoire Tech Scale Up (clôture 13/09/2026, mais seuils de chiffre d'affaires 65,6 M à 500 M FCFA et 10 employés minimum, hors de portée pour iMERL en phase de repositionnement).</li>
-<li><strong>Pistes non vérifiables</strong> : plusieurs offres Devex (consultant chef d'équipe évaluation Afrique de l'Ouest USAID, postes MEL multiples) sont derrière une authentification que je ne peux pas franchir, donc impossibles à confirmer sans inventer de détails. Idem pour un poste MICS 2026 Burkina Faso (UNICEF), dont j'ai trouvé la description mais pas de lien de candidature ni de date limite fiable.</li>
-<li><strong>Sources vérifiées sans rien de nouveau</strong> : ReliefWeb Jobs, UNjobnet, UNGM, ReBuSE (pas d'actualité récente indexée), AfrEA/EvalPartners/SCE (pas d'appel à communications ouvert et pertinent).</li>
+<li><code>emploiburkina.com</code> bloque le fetch direct des fiches d'offre (HTTP 403) depuis aujourd'hui, seule la page de recherche reste exploitable. Noté dans <code>state.md</code>, à surveiller.</li>
+<li>Une piste WATAF (spécialiste suivi-évaluation) n'a pas pu être vérifiée car son PDF est illisible en extraction automatique, donc écartée par prudence plutôt que signalée sans certitude sur la date.</li>
 </ul>
-<p>Rien à ajouter au tableau des opportunités déjà traitées de <code>.tmp/veille-jour/state.md</code> (aucune retenue). Je n'ai pas pu mettre à jour ce fichier moi-même dans cette session (pas d'accès en écriture), à faire à ta prochaine session si tu veux consigner ce passage à vide.</p>
+<p>État et export mis à jour (<code>.tmp/veille-jour/state.md</code>, <code>.tmp/veille-jour/opportunites.csv</code>), rien de neuf à tracer aujourd'hui.</p>
 <p>Dis-moi lesquelles tu veux traiter, je lance <code>appel-a-propositions</code>, <code>carriere-candidatures</code>, <code>reseau-communautes</code> ou <code>commerce-ventes</code> selon le cas.</p>
       </div>
     </details>
@@ -403,7 +407,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 13/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 14/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -425,7 +429,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 13/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 14/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
