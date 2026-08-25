@@ -289,6 +289,7 @@
 
 
 
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -329,37 +330,40 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 24/08/2026
+      14 agents · 1 compétence<br>mis à jour 25/08/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">24/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">25/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — lundi 24 août 2026</p>
-<p>Focus du jour (lundi) : Planification et coordination — agents principaux : CEO_ADKOB, commerce-ventes</p>
+      <p>📋 Planning du jour — mardi 25 août 2026</p>
+<p>Focus du jour (mardi) : missions clients et livrables — agents principaux : conseil-missions, admin-operations</p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li><strong>Candidature ODEPA (Secrétaire Général) : dépôt physique demain, 25/08/2026.</strong> CV + lettre déjà produits (<code>.tmp/</code>). Restait à ta charge : date de naissance, téléphone, date de la lettre, et 3 pièces administratives (diplômes certifiés, CNI/passeport, casier judiciaire). À vérifier aujourd'hui que c'est prêt à déposer.</li>
-<li>AfrEA 2026 : notification d'acceptation le 10/09/2026, article complet à soumettre le 30/09 si accepté. Pas d'action requise avant le 10/09.</li>
-<li>Nouveau poste La Fabrique (Responsable Mesure d'Impact & Digitalisation) : démarrage effectif sept. 2026, validé par le comité. Rien à faire avant le démarrage.</li>
+<li>Candidature ODEPA (Secrétaire Général) — dépôt physique <strong>aujourd'hui même</strong>, 25/08/2026</li>
+<li>AfrEA 2026 — notification d'acceptation le 10/09/2026 (dans 16 jours, pas d'action avant)</li>
+<li>Nouveau poste La Fabrique (Responsable Mesure d'Impact & Digitalisation) — démarrage sept. 2026, déjà validé, rien à faire avant</li>
+<li>INSPIR'RH — retour développeur (faisabilité, délai, budget maquette/MVP, hébergement) en pause depuis le 18/08 "à reprendre sur demande explicite de David" ; prospect en attente depuis 14 jours</li>
 </ul>
 <p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>carriere-candidatures</td><td>Vérifier avec toi l'état des pièces manquantes du dossier ODEPA et vérifier le mode de dépôt physique (lieu, horaires, personne à qui remettre)</td><td>Deadline demain 25/08/2026, dossier déjà produit, ne reste que la logistique</td></tr>
-<tr><td>commerce-ventes</td><td>Relire `context/business-log.md` pour voir où en est INSPIR'RH (en attente de retour client depuis le 2026-08-11, soit 13 jours) et évaluer si une relance légère est justifiée</td><td>Lundi = jour pipeline commercial ; l'offre d'audit process (marche 1) est prête depuis le 08-17 mais pas encore proposée à un prospect concret</td></tr>
-<tr><td>CEO_ADKOB</td><td>Point de situation rapide sur le pipeline (INSPIR'RH, audit process, CultureDash La Fabrique) une fois le retour commerce-ventes disponible</td><td>Rôle du lundi : synthèse et priorisation de la semaine</td></tr>
+<tr><td>carriere-candidatures</td><td>Vérifier avec toi que le dossier ODEPA est complet (pièces signalées hier comme manquantes : date de naissance, téléphone, date de la lettre, diplômes certifiés, CNI/passeport, casier judiciaire) et confirmer les modalités de dépôt physique</td><td>Deadline aujourd'hui même, dossier déjà rédigé, ne reste que la logistique</td></tr>
+<tr><td>conseil-missions (focus)</td><td>Signaler un objectif actif obsolète dans la fiche : DEPAC 3 (fin de projet livrée sept. 2025) et FASOVEIL (mission achevée juin 2025) sont listés comme mandats "à suivre" alors qu'ils sont terminés. Proposition : rafraîchir la fiche via `createur-agents` plutôt que la laisser en l'état</td><td>Écart repéré en croisant la fiche agent avec `CONTEXT.md`, jamais corrigé depuis la création de la section Mission & Objectifs</td></tr>
+<tr><td>admin-operations (focus)</td><td>Même remarque que conseil-missions (facturation visée sur des mandats déjà clos, fiche à rafraîchir). En parallèle : le modèle de contrat OHADA reste à tenir prêt pour INSPIR'RH, dès que le chiffrage débloque une signature</td><td>Fiche obsolète + anticiper la prochaine étape contractuelle du premier client tiers du cabinet</td></tr>
+<tr><td>dev-tech</td><td>Clarifier avec toi ce que représente le travail en cours sur INSPIR'RH (dashboard admin, pages bo, tests Playwright — nombreux fichiers modifiés non commités) : est-ce la maquette cliquable demandée par le client le 17/08 (légitime), ou un développement qui dépasse la règle "aucun engagement dev tant que contrat non signé" posée le 11/08 (`docs/decisions.md`) ?</td><td>Écart détecté entre l'état réel du dépôt (`git status`) et la règle figée du projet, à trancher avant que ça s'accumule sans traçabilité</td></tr>
+<tr><td>commerce-ventes</td><td>Le vrai bloquant côté INSPIR'RH n'est pas une relance (déjà envisagée hier) mais l'absence du chiffrage à transmettre : reprendre le calcul jours-homme par lot au TJM déjà fixé (75 000 FCFA, 2j/semaine) pour produire le retour développeur en 6 points attendu par le client</td><td>Sans ce chiffrage, aucune relance n'a de contenu à proposer ; le client attend depuis le 17/08</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui : marketing-comm, dev-tech, rd-innovation, conseil-missions, admin-operations, marque-personnelle, reseau-communautes, savoirs-presentations, appel-a-propositions, veille-opportunites (veille en pause depuis le 08-14, aucune action tant que tu n'as pas validé une nouvelle formule)</p>
+<p>Rien d'urgent aujourd'hui : marketing-comm, rd-innovation, appel-a-propositions, veille-opportunites, marque-personnelle, reseau-communautes, savoirs-presentations.</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">24/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">25/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-08-24.</p>
+      <p class="empty">Pas encore généré pour le 2026-08-25.</p>
       </div>
     </details>
   </div>
@@ -408,7 +412,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 24/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 25/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -430,7 +434,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 24/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 25/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
