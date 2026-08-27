@@ -292,6 +292,8 @@
 
 
 
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -332,39 +334,38 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 26/08/2026
+      14 agents · 1 compétence<br>mis à jour 27/08/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">26/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">27/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — mercredi 26 août 2026</p>
-<p>Focus du jour (mercredi) : Développement numérique — agents principaux : dev-tech, rd-innovation</p>
+      <p>📋 Planning du jour — jeudi 27 août 2026</p>
+<p>Focus du jour (jeudi) : Réseau, candidatures, opportunités — agents principaux : <code>veille-opportunites</code>, <code>reseau-communautes</code>, <code>carriere-candidatures</code></p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li><strong>Candidature ODEPA (dépôt physique)</strong> — deadline <strong>25 août 2026, soit hier</strong>. Aucune trace d'une confirmation de dépôt dans <code>context/HISTORY.md</code> (dernière entrée : 19/08). À vérifier en priorité avec <code>carriere-candidatures</code>.</li>
-<li>AfrEA 2026, notification d'acceptation de l'abstract — <strong>10 septembre 2026</strong> (dans 15 jours)</li>
-<li>AfrEA 2026, article complet si abstract accepté — <strong>30 septembre 2026</strong></li>
+<li><strong>Candidature ODEPA</strong> — deadline 25 août 2026 (dépôt physique) : <strong>déjà passée depuis 2 jours</strong>, statut non tracé dans <code>HISTORY.md</code>. À clarifier en priorité.</li>
+<li>Notification d'acceptation AfrEA 2026 — 10 septembre 2026 (dans 14 jours)</li>
+<li>Article complet AfrEA (si accepté) — 30 septembre 2026</li>
+<li>Démarrage poste Responsable Mesure d'Impact & Digitalisation (La Fabrique) — septembre 2026, date exacte non précisée</li>
 </ul>
 <p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>`dev-tech`</td><td>Finaliser la maquette cliquable INSPIR'RH (5 parcours : créer un travailleur, présence/absence, paiement+historique, remplaçant disponible, retrouver un document). Le `git status` montre un chantier déjà ouvert et non committé (`bo/audit`, `bo/tpe`, `bo/vivier` + tests Playwright)</td><td>Le client a explicitement demandé cette maquette le 17/08 avant tout engagement de dev complet (`docs/decisions.md`), et le travail semble en cours mais pas clos ni versionné</td></tr>
-<tr><td>`carriere-candidatures`</td><td>Vérifier le statut réel du dépôt du dossier ODEPA (deadline hier) et consigner le résultat dans `HISTORY.md`</td><td>Échéance passée sans trace de confirmation — à sécuriser avant que ça ne devienne un point mort</td></tr>
-<tr><td>`commerce-ventes`</td><td>Préparer l'estimation budgétaire maquette / MVP / optionnel demandée par INSPIR'RH (point 5 du retour client), en coordination avec `dev-tech`</td><td>Le client a inversé la logique de chiffrage (c'est nous qui devons proposer un chiffre) — bloquant pour avancer sur ce dossier</td></tr>
-<tr><td>`rd-innovation`</td><td>Rien d'urgent aujourd'hui</td><td>Pas d'entretien réseau MERL Reporter identifié comme planifié à ce jour</td></tr>
+<tr><td>`carriere-candidatures`</td><td>Faire le point avec toi sur le statut réel de la candidature ODEPA (déposée ? confirmée reçue ?) et mettre à jour son objectif actif en conséquence</td><td>Deadline du 25/08 dépassée sans trace de conclusion dans `HISTORY.md` — objectif actif de la fiche pointe vers une échéance déjà passée</td></tr>
+<tr><td>`veille-opportunites`</td><td>Relancer un scan manuel ciblé (AAP + recrutement) aujourd'hui, puisque l'automatisation `/veille-jour` est en pause depuis le 2026-08-14</td><td>Jour dédié à la veille dans le rythme hebdo, et aucune veille active ne tourne depuis 2 semaines</td></tr>
+<tr><td>`reseau-communautes`</td><td>Repérer une opportunité de collaboration ou co-soumission (réseaux ReBuSE/SCE/EvalforEarth) en attendant la notification AfrEA du 10/09</td><td>Objectif actif de la fiche, jour dédié réseau</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui : <code>marketing-comm</code>, <code>conseil-missions</code>, <code>admin-operations</code>, <code>marque-personnelle</code>, <code>reseau-communautes</code>, <code>savoirs-presentations</code>, <code>appel-a-propositions</code></p>
-<p>Statut particulier : <code>veille-opportunites</code> reste en pause depuis le 14/08 (décision David, consommation token jugée trop élevée), aucune action générée aujourd'hui.</p>
+<p>Rien d'urgent aujourd'hui : <code>dev-tech</code>, <code>rd-innovation</code>, <code>admin-operations</code>, <code>marketing-comm</code>, <code>marque-personnelle</code>, <code>commerce-ventes</code>, <code>conseil-missions</code>, <code>savoirs-presentations</code>, <code>appel-a-propositions</code> (hors focus du jour, aucune échéance imminente signalée)</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">26/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">27/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-08-26.</p>
+      <p class="empty">Pas encore généré pour le 2026-08-27.</p>
       </div>
     </details>
   </div>
@@ -413,7 +414,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 26/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 27/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -435,7 +436,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 26/08/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 27/08/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
