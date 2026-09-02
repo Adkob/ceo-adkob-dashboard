@@ -302,6 +302,8 @@
 
 
 
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -342,38 +344,38 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 01/09/2026
+      14 agents · 1 compétence<br>mis à jour 02/09/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">01/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">02/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — mardi 1er septembre 2026</p>
-<p><strong>Focus du jour (mardi) : Missions clients et livrables — agents principaux : conseil-missions, admin-operations</strong></p>
+      <p>📋 Planning du jour — mercredi 2 septembre 2026</p>
+<p>Focus du jour (mercredi) : Développement numérique — agents principaux : dev-tech, rd-innovation</p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li><strong>Démarrage du nouveau poste "Responsable Mesure d'Impact & Digitalisation" à La Fabrique</strong> : à partir de septembre 2026, validé par le comité. On y est. Pas de date précise arrêtée dans le contexte, à confirmer avec toi si ce n'est pas encore fait.</li>
-<li><strong>AfrEA 2026</strong> : notification d'acceptation de l'abstract le 10 septembre 2026 (dans 9 jours). Article complet à soumettre le 30 septembre si accepté.</li>
-<li><strong>Candidature ODEPA (Secrétaire Général)</strong> : deadline de dépôt physique le 25 août 2026, déjà dépassée. Aucune trace dans l'historique confirmant le dépôt depuis la dernière correction du dossier le 04/08. Statut à clarifier.</li>
+<li>AfrEA 2026 : notification d'acceptation de l'abstract — 10 septembre 2026 (dans 8 jours). Si accepté, article complet dû le 30 septembre.</li>
+<li>Nouveau poste La Fabrique (Responsable Mesure d'Impact & Digitalisation) : démarre ce mois-ci (sept. 2026), Mois 1 du plan d'action en cours (cadrage, état des lieux données, clôture Africalia). Hors périmètre des 12 agents, mais c'est une transition majeure de ta charge de travail réelle, à garder en tête pour le reste du planning.</li>
+<li>ODEPA : deadline de dépôt physique du 25/08/2026 dépassée depuis 8 jours sans trace de résolution dans HISTORY.md après le 14/08 (candidature "sous condition" avait été préparée). À clarifier, voir proposition ci-dessous.</li>
 </ul>
-<h3>Propositions par département</h3>
+<p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>conseil-missions</td><td>Corriger la fiche : ses "objectifs actifs" citent le suivi de DEPAC 3 et FASOVEIL, deux missions terminées depuis fin 2025 (plus d'un an). Clarifier s'il y a un mandat S&E externe réellement actif aujourd'hui, sinon le dire clairement dans la fiche.</td><td>Focus du jour. Objectif obsolète repéré en croisant la fiche avec les dates réelles de CONTEXT.md</td></tr>
-<tr><td>admin-operations</td><td>Même correction sur "facturation à jour sur DEPAC 3, FASOVEIL" (missions closes). Plus important : vérifier le statut contractuel d'INSPIR'RH. Le git status montre un développement déjà engagé (fichiers modifiés dans `projects/inspirrh-tpe-ci/`, migration `0009_matricule.sql`), alors que la dernière décision tracée le 11/08 était "aucun engagement de développement tant que le contrat n'est pas signé".</td><td>Focus du jour. Écart détecté entre la décision de séquençage actée et l'état réel du dossier</td></tr>
-<tr><td>carriere-candidatures</td><td>Clarifier le sort du dossier ODEPA. Deadline dépassée sans confirmation de dépôt dans l'historique.</td><td>Deadline passée, objectif encore listé comme actif sans résolution tracée</td></tr>
-<tr><td>dev-tech</td><td>Si le développement INSPIR'RH est bien engagé côté client, faire un point d'avancement et le documenter (README/CLAUDE.md/HISTORY), avant que le décalage ne se creuse davantage.</td><td>Écho direct au point admin-operations. Le workspace a déjà connu ce problème plusieurs fois (ESARNO, Winner, GETC découverts a posteriori faute de traçabilité)</td></tr>
+<tr><td>dev-tech</td><td>Configurer winner-transit.com sur Vercel (apex + www → wte-site, app.winner-transit.com → winner)</td><td>Domaine acheté hier (2026-09-01), répartition déjà tranchée, il ne reste que l'exécution technique</td></tr>
+<tr><td>dev-tech</td><td>Reprendre Suivo+ au Jalon B (plan d'exécution en lots)</td><td>Jalon A (cadrage) clôturé le 31/08, prochaine étape déjà identifiée, rien ne bloque</td></tr>
+<tr><td>carriere-candidatures</td><td>Confirmer avec toi le statut réel du dépôt ODEPA</td><td>Deadline du 25/08 dépassée, fiche agent encore active sur cet objectif sans mise à jour</td></tr>
+<tr><td>commerce-ventes</td><td>Explorer la synergie bureau d'études iMERL x nouveau poste La Fabrique</td><td>Piste explicitement mise en attente "jusqu'au moment venu" (17/08), le poste démarre justement ce mois-ci</td></tr>
 </tbody></table></div>
-<p><strong>Rien d'urgent aujourd'hui :</strong> marketing-comm, commerce-ventes, rd-innovation, marque-personnelle, reseau-communautes (rien avant la notification AfrEA du 10/09), savoirs-presentations (idem), appel-a-propositions (dossier OMS clos, aucun autre AAP actif), veille-opportunites (automatisation en pause depuis le 14/08, décision explicite de ta part)</p>
+<p>Rien d'urgent aujourd'hui : rd-innovation, admin-operations, marketing-comm, conseil-missions, marque-personnelle, reseau-communautes, savoirs-presentations, appel-a-propositions, veille-opportunites (focus prévu jeudi)</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">01/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">02/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-09-01.</p>
+      <p class="empty">Pas encore généré pour le 2026-09-02.</p>
       </div>
     </details>
   </div>
@@ -422,7 +424,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 01/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 02/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -444,7 +446,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 01/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 02/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
