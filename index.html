@@ -315,6 +315,8 @@
 
 
 
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -355,46 +357,37 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 09/09/2026
+      14 agents · 1 compétence<br>mis à jour 10/09/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">09/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">10/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — mercredi 9 septembre 2026</p>
-<p>Focus du jour (mercredi) : Développement numérique — agents principaux : <code>dev-tech</code>, <code>rd-innovation</code></p>
+      <p>📋 Planning du jour — jeudi 10 septembre 2026</p>
+<p>Focus du jour (jeudi) : Réseau, candidatures, opportunités — agents principaux : <code>veille-opportunites</code>, <code>reseau-communautes</code>, <code>carriere-candidatures</code></p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li>AfrEA 2026 (Marrakech) — notification d'acceptation de l'abstract <strong>demain, 10 septembre 2026</strong></li>
-<li>Si accepté : article complet à soumettre le <strong>30 septembre 2026</strong></li>
-<li>Deux échéances déjà obsolètes repérées dans les fiches agents (à corriger, pas une urgence d'aujourd'hui) : candidature ODEPA (deadline citée 25/08/2026, déjà passée) et missions DEPAC 3/FASOVEIL citées comme "actives" alors qu'elles sont closes depuis 2024-2025</li>
+<li><strong>AfrEA 2026 — notification d'acceptation attendue aujourd'hui même (10/09/2026).</strong> Si acceptée : article complet à soumettre avant le 30 septembre 2026 (dans 20 jours).</li>
+<li>ODEPA (Secrétaire Général) — dépôt physique prévu le 25/08/2026 (passé depuis 16 jours). Aucune confirmation dans l'historique que le dossier a effectivement été déposé ni de son issue. À clarifier avec toi plutôt qu'à supposer un statut.</li>
 </ul>
-<h3>Propositions par département</h3>
-<h4>Focus du jour</h4>
-<p><strong><code>dev-tech</code></strong> — Suivo+ a terminé ses 7 lots de construction hier (2026-09-08, audit + smoke test 14/14 verts). Il reste 5 décisions/actions avant le pilote réel chez la Clinique Les Tisserins :</p>
-<p>1. Trancher le PIN parent (jamais vérifié depuis le Lot 3 : le construire ou retirer l'écran)</p>
-<p>2. Trancher l'organisation Supabase Cloud dédiée (<code>docs/decisions.md</code> #7)</p>
-<p>3. Déployer sur Vercel (volontairement pas encore fait, décision explicite du 2026-09-08)</p>
-<p>4. Valider la réception push sur un vrai téléphone Android (non vérifiable sans navigateur/appareil)</p>
-<p>5. Trancher le nom "Suivo+" avant toute communication publique (conflit potentiel avec la marque Suivo NV)</p>
-<p>C'est aujourd'hui l'app la plus proche d'un vrai pilote client sur l'objectif "3 apps web livrées". Proposition concrète : trancher ces 5 points avec toi puis lancer le déploiement. Accessoirement, AAP Assistant reste toujours en ligne d'attente (code prêt depuis le 13/08, jamais déployé) — à considérer si Suivo+ prend le pas aujourd'hui.</p>
-<p><strong><code>rd-innovation</code></strong> — Rien d'urgent aujourd'hui. MERL Reporter reste bloqué en attente des entretiens réseau de validation (rien de planifié signalé) ; aucune expérimentation en cours à faire avancer.</p>
-<h4>Autres départements</h4>
+<p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>`reseau-communautes`</td><td>Rien à engager aujourd'hui, mais surveille ta boîte mail demain : notification AfrEA attendue le 10/09</td><td>Échéance à J+1, pas d'action avant la réponse</td></tr>
-<tr><td>`marketing-comm`</td><td>Le site iMERL vient d'être retravaillé en profondeur (refonte macOS/Apple, 13 visuels HD, dernier commit) — vérifier qu'il est bien en ligne puis envisager un post LinkedIn cabinet</td><td>Contenu prêt, encore non valorisé</td></tr>
+<tr><td>`reseau-communautes`</td><td>Vérifier si la notification AfrEA est arrivée (email de la conférence) et, si acceptée, lancer le cadrage de l'article complet</td><td>Échéance exacte du jour, objectif actif explicite de la fiche</td></tr>
+<tr><td>`carriere-candidatures`</td><td>Faire le point avec toi sur l'issue du dossier ODEPA (déposé ou non le 25/08 ?) avant de garder cet objectif actif tel quel</td><td>Deadline passée sans confirmation tracée, la fiche affiche encore l'objectif comme actif</td></tr>
+<tr><td>`veille-opportunites`</td><td>Lancer une veille manuelle ciblée aujourd'hui (Cabinet + Consultant), puisque l'automatisation `/veille-jour` reste en pause</td><td>Jour dédié au réseau/opportunités dans le rythme hebdo, aucune veille alternative en place depuis la pause</td></tr>
+<tr><td>`savoirs-presentations`</td><td>En attente de la notification AfrEA avant d'agir sur l'article complet</td><td>Dépend directement de la décision de `reseau-communautes` ci-dessus, pas d'action indépendante à ce stade</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui : <code>commerce-ventes</code>, <code>conseil-missions</code> (fiche à corriger : DEPAC 3/FASOVEIL clos), <code>admin-operations</code> (même correction), <code>carriere-candidatures</code> (fiche à corriger : deadline ODEPA passée), <code>marque-personnelle</code>, <code>savoirs-presentations</code> (en attente de la notification AfrEA), <code>appel-a-propositions</code>, <code>veille-opportunites</code>.</p>
+<p>Rien d'urgent aujourd'hui : <code>marketing-comm</code>, <code>commerce-ventes</code>, <code>dev-tech</code>, <code>rd-innovation</code>, <code>conseil-missions</code>, <code>admin-operations</code>, <code>marque-personnelle</code>, <code>appel-a-propositions</code> (aucun AAP actif depuis la clôture du dossier OMS)</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">09/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">10/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-09-09.</p>
+      <p class="empty">Pas encore généré pour le 2026-09-10.</p>
       </div>
     </details>
   </div>
@@ -443,7 +436,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 09/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 10/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -465,7 +458,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 09/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 10/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
