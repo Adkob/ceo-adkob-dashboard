@@ -328,6 +328,9 @@
 
 
 
+
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -368,36 +371,37 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 16/09/2026
+      14 agents · 1 compétence<br>mis à jour 17/09/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">16/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">17/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — mercredi 16 septembre 2026</p>
-<p>Focus du jour (mercredi) : Développement numérique — agents principaux : dev-tech, rd-innovation</p>
+      <p>📋 Planning du jour — jeudi 17 septembre 2026</p>
+<p>Focus du jour (jeudi) : Réseau, candidatures, opportunités — agents principaux : veille-opportunites, reseau-communautes, carriere-candidatures</p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li>Cérémonie de clôture du programme Africalia — <strong>demain, 17 septembre 2026</strong> (devant les 10 espaces culturels et les partenaires). Les supports (<code>cloture-africalia-contenu-restitution.md</code>, <code>cloture-africalia-support-final.pptx</code>) semblent déjà produits d'après le dossier, mais pas encore relus en session.</li>
-<li>AfrEA 2026 : article complet à déposer sur author.afrea.org avant le <strong>30 septembre 2026, 17h GMT</strong> (14 jours restants). Points encore ouverts d'après HISTORY.md : consignes de format du portail non récupérées, coauteurs éventuels non tranchés, accès aux données FASOVEIL non confirmé.</li>
+<li>Cérémonie de clôture du programme Africalia — <strong>aujourd'hui, 17 septembre 2026</strong> (devant les 10 espaces culturels et les bailleurs). Contenu déjà consolidé dans <code>context/projets/cloture-africalia-contenu-restitution.md</code> et le support final identifié (<code>Présentation- restitution du programme.pptx</code>, 30 slides)</li>
+<li>Article complet AfrEA 2026 à déposer sur author.afrea.org — 30 septembre 2026, 17h GMT (13 jours restants)</li>
+<li>Soutenance orale offre BEDSAH/Helen Keller CI — date non fixée, résultat à renseigner dès connu</li>
 </ul>
 <p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>**dev-tech**</td><td>Reconfirmer le statut réel des lots d'`imerl-unifie` (Lot 3 Services/Tarifs, Lot 4 Réalisations, Lot 6 audit + hébergement) en comparant le `CLAUDE.md` du projet aux derniers commits</td><td>Point ouvert signalé le 2026-09-10 dans HISTORY.md : le tableau de routes du projet semble en retard sur le code réel, ce qui bloque toute décision de bascule d'hébergement (Lot 6) tant que ce n'est pas clarifié</td></tr>
-<tr><td>**conseil-missions**</td><td>Relecture finale du contenu de restitution Africalia (`cloture-africalia-contenu-restitution.md` et le PPTX) avant la cérémonie de demain</td><td>Dernière fenêtre utile avant l'échéance du 17 septembre ; le plan signalait 2 EC (CDC-La Termitière, Gambidi) sans bilan à jour, à vérifier que ça n'a pas été corrigé depuis le 2026-09-15</td></tr>
-<tr><td>**savoirs-presentations**</td><td>Récupérer les consignes de format du portail author.afrea.org avant de démarrer la rédaction de l'article AfrEA</td><td>Point bloquant explicitement listé comme non résolu dans CONTEXT.md, et la deadline (30/09) se rapproche</td></tr>
+<tr><td>`reseau-communautes`</td><td>Avancer les démarches hors article pour AfrEA 2026 : inscription à la conférence (kobdavi@gmail.com), demande de lettre d'invitation pour le visa Maroc, chiffrage du budget Ouaga-Marrakech</td><td>Objectif actif de l'agent, échéance qui se rapproche (23-27 nov.), rien n'est financé par l'AfrEA</td></tr>
+<tr><td>`veille-opportunites`</td><td>Lancer un scan manuel ponctuel des sources prioritaires (l'automatisation `/veille-jour` reste en pause sur décision David)</td><td>Dernier scan enregistré dans `state.md` : 2026-08-16, soit 32 jours sans veille active, jour focus du réseau/opportunités</td></tr>
+<tr><td>`savoirs-presentations`</td><td>Récupérer les consignes de format du portail author.afrea.org et démarrer la rédaction de l'article AfrEA (périmètre strict : 249 citoyens FASOVEIL/UNALFA)</td><td>Échéance dure du 30/09, objectif actif de l'agent, aucune consigne de format récupérée à ce jour d'après le contexte</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui : rd-innovation (aucune expérimentation active en cours, MERL Reporter reste en attente d'entretiens réseau sans nouvelle échéance), marketing-comm (charte graphique et catalogue déjà livrés récemment), commerce-ventes, admin-operations, carriere-candidatures (ODEPA déjà déposée fin août, dossier clos), marque-personnelle, reseau-communautes (AfrEA suit son cours, rien de spécifique à ce jour), appel-a-propositions (aucun AAP actif), veille-opportunites (automatisation en pause depuis le 2026-08-14, pas de veille manuelle demandée)</p>
+<p>Rien d'urgent aujourd'hui : <code>carriere-candidatures</code> (son objectif actif listé, candidature ODEPA, avait une deadline au 25 août 2026 déjà passée — probablement à clore ou mettre à jour), <code>marketing-comm</code>, <code>commerce-ventes</code>, <code>dev-tech</code>, <code>rd-innovation</code>, <code>conseil-missions</code>, <code>admin-operations</code>, <code>marque-personnelle</code>, <code>appel-a-propositions</code> (objectif OMS déjà clos, pas de nouveau dossier en cours)</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">16/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">17/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-09-16.</p>
+      <p class="empty">Pas encore généré pour le 2026-09-17.</p>
       </div>
     </details>
   </div>
@@ -446,7 +450,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 16/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 17/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -468,7 +472,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 16/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 17/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
