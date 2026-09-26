@@ -348,6 +348,9 @@
 
 
 
+
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -388,43 +391,38 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 25/09/2026
+      14 agents · 1 compétence<br>mis à jour 26/09/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">25/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">26/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — jeudi 25 septembre 2026</p>
-<p>Focus du jour (jeudi) : Réseau, candidatures, opportunités — agents principaux : veille-opportunites, reseau-communautes, carriere-candidatures</p>
+      <p>📋 Planning du jour — samedi 26 septembre 2026</p>
+<p>Focus du jour (samedi) : le rythme hebdomadaire ne couvre que lundi-vendredi. Focus dicté par l'urgence : échéance AfrEA à 4 jours — agents principaux : <code>savoirs-presentations</code>, <code>reseau-communautes</code></p>
 <p>⚠️ Échéances à surveiller</p>
 <ul>
-<li><strong>Article complet AfrEA 2026 à déposer sur author.afrea.org avant le 30 septembre 2026, 17h GMT</strong> — dans 5 jours. Le dépôt vaut confirmation de présentation orale (Marrakech, 23-27 nov.)</li>
-<li>FASOVEIL capitalisation (11 560 000 FCFA) : offre envoyée le 22/09, TDR révisés reçus le 23/09, toujours en attente de retour du Laboratoire Citoyennetés. Deux points de vigilance non résolus signalés côté client (calendrier TDR déjà dépassé, statut d'enregistrement bureau d'études non vérifié) — rien à produire de plus tant que le client ne répond pas</li>
-<li>Facture définitive ACE/RECIT (Laboratoire Citoyennetés) en attente, seule la proforma existe</li>
+<li>Article complet AfrEA 2026 (dossier AfrEA2026-ABS-479) — <strong>30 septembre 2026, 17h GMT</strong> (dans 4 jours)</li>
+<li>Facture définitive ACE/RECIT (Laboratoire Citoyennetés) — mission achevée depuis le 15/09, proforma déjà générée, en attente de validation du rapport pour finaliser</li>
+<li>Offre FASOVEIL (11 560 000 FCFA) — en attente de retour client depuis le 22-23/09, aucune date limite de notre côté mais calendrier des TDR déjà dépassé signalé au client</li>
 </ul>
 <p>Propositions par département</p>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>**savoirs-presentations**</td><td>Récupérer les consignes de format sur author.afrea.org et lancer la rédaction de l'article complet</td><td>Deadline dure dans 5 jours, rien d'autre ne peut passer devant</td></tr>
-<tr><td>**reseau-communautes**</td><td>Avancer les démarches AfrEA hors article : inscription à la conférence (kobdavi@gmail.com), besoin ou non de lettre d'invitation pour le visa Maroc, budget de participation</td><td>Objectif actif explicite de la fiche, s'articule directement avec l'urgence article ci-dessus</td></tr>
-<tr><td>**carriere-candidatures**</td><td>Aucune action de fond, mais signaler un écart : la fiche liste encore "candidature ODEPA, deadline 25 août 2026" comme objectif actif — cette date est dépassée d'un mois. À nettoyer ou à clore explicitement</td><td>La fiche n'a manifestement pas été mise à jour depuis la clôture (ou l'abandon) de ce dossier</td></tr>
-<tr><td>**veille-opportunites**</td><td>Pas de nouvelle opportunité en attente de traitement. Option : relancer une veille manuelle ponctuelle, vu que l'automatisation `/veille-jour` est en pause depuis le 2026-08-14 et qu'aucune veille (même manuelle) n'apparaît dans l'historique récent</td><td>Focus du jour, mais aucune urgence réelle ne le déclenche seule — à toi de dire si tu veux la lancer</td></tr>
+<tr><td>`savoirs-presentations`</td><td>Récupérer les consignes de format sur author.afrea.org (bloquant), puis démarrer la rédaction de l'article — périmètre strict 249 citoyens FASOVEIL/UNALFA</td><td>Deadline dans 4 jours, aucune consigne de format encore récupérée à ce stade</td></tr>
+<tr><td>`reseau-communautes`</td><td>Avancer les démarches hors article : inscription conférence (kobdavi@gmail.com), lettre d'invitation/visa Maroc, chiffrage budget Ouaga-Marrakech</td><td>Même échéance du 30/09, ces démarches sont indépendantes du texte mais tout aussi bloquantes pour la participation</td></tr>
+<tr><td>`admin-operations`</td><td>Vérifier le statut de validation du rapport ACE/RECIT auprès du Laboratoire Citoyennetés pour débloquer la facture définitive</td><td>Mission terminée depuis 11 jours, paiement conditionné à cette validation</td></tr>
+<tr><td>`rd-innovation`</td><td>Construire le prototype de triage automatique de demandes (Groq/Claude Haiku) recommandé dans la veille du 2026-09-25 sur Jev/décision en temps réel</td><td>Recommandation déjà tranchée ("prototyper avant de communiquer"), pas encore démarrée</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui : marketing-comm, commerce-ventes, dev-tech, rd-innovation, marque-personnelle, appel-a-propositions</p>
-<p>Deux écarts de fiches repérés en passant (à corriger si tu confirmes, pas d'action fabriquée) :</p>
-<ul>
-<li><code>conseil-missions.md</code> et <code>admin-operations.md</code> citent encore DEPAC-3 et FASOVEIL/UNALFA comme "objectifs actifs" alors que ces trois missions sont déjà closes selon CONTEXT.md. La mission FASOVEIL/UNALFA qui tourne réellement aujourd'hui (capitalisation) n'y figure pas.</li>
-<li><code>savoirs-presentations.md</code> cite encore les "supports de formation Africalia" comme objectif actif alors que le programme s'est terminé le 17 septembre.</li>
-</ul>
+<p>Rien d'urgent aujourd'hui : <code>marketing-comm</code>, <code>commerce-ventes</code>, <code>dev-tech</code> (AAP Assistant reste en attente de déploiement mais pas d'action bloquante identifiée aujourd'hui), <code>conseil-missions</code>, <code>carriere-candidatures</code> (fiche à rafraîchir : l'objectif ODEPA suivi dedans est daté du 25 août 2026, déjà passé), <code>marque-personnelle</code>, <code>appel-a-propositions</code>, <code>veille-opportunites</code> (automatisation quotidienne en pause depuis le 2026-08-14, disponible sur demande manuelle)</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">25/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">26/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-09-25.</p>
+      <p class="empty">Pas encore généré pour le 2026-09-26.</p>
       </div>
     </details>
   </div>
@@ -473,7 +471,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 25/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 26/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -495,7 +493,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 25/09/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 26/09/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
