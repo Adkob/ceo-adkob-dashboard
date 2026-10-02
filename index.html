@@ -363,6 +363,9 @@
 
 
 
+
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -403,41 +406,48 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 01/10/2026
+      14 agents · 1 compétence<br>mis à jour 02/10/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">01/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">02/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>📋 Planning du jour — jeudi 1er octobre 2026</p>
-<p>Focus du jour (jeudi) : Réseau, candidatures, opportunités — agents principaux : <code>veille-opportunites</code>, <code>reseau-communautes</code>, <code>carriere-candidatures</code></p>
-<p>⚠️ Échéances à surveiller</p>
-<ul>
-<li><strong>Article complet AfrEA 2026 (dossier AfrEA2026-ABS-479) — deadline dépassée hier, 30 septembre 2026 17h GMT.</strong> Rien dans l'historique récent n'indique que l'article a été rédigé ni déposé sur author.afrea.org. C'est le point le plus critique du jour, à clarifier en premier : statut réel (déposé ? en cours ? pas commencé ?) avant toute autre priorité.</li>
-<li>Offre technique et financière FASOVEIL (Laboratoire Citoyennetés, 11 560 000 FCFA) — en attente de retour client depuis le 23/09 (TDR révisés actualisés), ça fait une semaine</li>
-<li>Facture définitive ACE/RECIT (Laboratoire Citoyennetés) — en attente depuis le 22/09, date d'émission et coordonnées de paiement encore à compléter</li>
-</ul>
-<p>Propositions par département</p>
+      <p>📋 Planning du jour — vendredi 2 octobre 2026</p>
+<p><strong>Focus du jour (vendredi) :</strong> Communication et visibilité — agents principaux : <code>marketing-comm</code>, <code>marque-personnelle</code>, <code>linkedin-writer</code></p>
+<p>---</p>
+<h3>⚠️ Échéances à surveiller</h3>
+<div class="ptable-wrap"><table>
+<thead><tr><th>Échéance</th><th>Date limite</th><th>État</th></tr></thead><tbody>
+<tr><td>🔴 **Article complet AfrEA 2026** (AfrEA2026-ABS-479)</td><td>**30 sept. 2026, 17h GMT — dépassée depuis 2 jours**</td><td>Aucune trace de dépôt dans l'historique. Déjà signalé dans le planning du 01/10, toujours sans réponse de ta part. Reste le point le plus critique.</td></tr>
+<tr><td>AfrEA 2026, démarches hors article (inscription, visa Maroc, budget Ouaga-Marrakech)</td><td>Conférence 23-27 nov., soit ~7 semaines</td><td>Le visa est le chemin critique, rien ne confirme que c'est lancé</td></tr>
+<tr><td>Offre FASOVEIL Capitalisation, 11 560 000 FCFA</td><td>Envoyée le 22/09, actualisée le 23/09</td><td>10 jours sans retour client tracé</td></tr>
+<tr><td>Facture définitive ACE/RECIT (1 235 000 FCFA nets)</td><td>En attente depuis le 22/09</td><td>Date d'émission et coordonnées de paiement toujours à compléter. Le paiement ne peut pas arriver sans elle.</td></tr>
+</tbody></table></div>
+<p><strong>Signal à clarifier avant toute relance :</strong> un fichier <code>Facture_Definitive_Capitalisation_FASOVEIL_iMERL.docx</code> est apparu dans <code>context/import/</code> sans jamais être tracé dans <code>HISTORY.md</code>. Soit la mission a été attribuée (et l'offre n'est plus "en attente"), soit c'est un brouillon. Ça change la proposition de <code>conseil-missions</code> ci-dessous.</p>
+<p>---</p>
+<h3>Propositions par département</h3>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>`savoirs-presentations`</td><td>Faire le point immédiat sur l'article AfrEA : statut réel, consignes de format du portail récupérées ou non, ce qu'il reste à écrire</td><td>Deadline dépassée depuis hier, risque de perdre la présentation orale acceptée à Marrakech</td></tr>
-<tr><td>`reseau-communautes`</td><td>Vérifier les démarches hors article pour AfrEA : inscription conférence (kobdavi@gmail.com), lettre d'invitation/visa Maroc, budget Ouaga-Marrakech</td><td>Mission active de l'agent, rien ne confirme que ces démarches ont avancé depuis le 13/09</td></tr>
-<tr><td>`carriere-candidatures`</td><td>Point de clarification : la candidature ODEPA (deadline dépôt physique 25 août) n'a aucune trace de conclusion dans l'historique récent, 5 semaines après la deadline</td><td>La mission active de la fiche agent cite encore cette échéance comme en cours, probablement obsolète, à corriger</td></tr>
-<tr><td>`veille-opportunites`</td><td>Lancer une veille manuelle ciblée du jour (AAP S&E/culture + offres de recrutement)</td><td>Jour dédié du rythme hebdomadaire, automatisation `/veille-jour` toujours en pause depuis le 14/08</td></tr>
-<tr><td>`admin-operations`</td><td>Générer la facture définitive ACE/RECIT (date d'émission + coordonnées de paiement)</td><td>En attente depuis le 22/09, dossier simple à clore</td></tr>
-<tr><td>`conseil-missions`</td><td>Relancer poliment le Laboratoire Citoyennetés sur l'offre FASOVEIL</td><td>Une semaine sans retour sur un dossier à 11,56 M FCFA</td></tr>
-<tr><td>`dev-tech`</td><td>Débloquer la mise en ligne réelle d'AAP Assistant (Vercel ou NAS UGREEN)</td><td>Code fonctionnel depuis le 13/08, reste uniquement le déploiement, 7 semaines sans avancer</td></tr>
+<tr><td>`savoirs-presentations`</td><td>Trancher le statut réel de l'article AfrEA : déposé, en cours, ou abandonné. Si non déposé, écrire au portail aujourd'hui pour demander une tolérance plutôt que de laisser mourir le dossier</td><td>Deadline dépassée de 2 jours, une présentation orale internationale acceptée est en jeu</td></tr>
+<tr><td>`marque-personnelle` **(focus jour)**</td><td>Préparer l'annonce LinkedIn de l'acceptation AfrEA, **sans la publier** tant que le dépôt de l'article n'est pas confirmé</td><td>L'acceptation du 13/09 n'a jamais été valorisée publiquement. Annoncer une présentation dont le dossier est en défaut serait un risque de crédibilité, pas une opportunité</td></tr>
+<tr><td>`marketing-comm` **(focus jour)**</td><td>Finaliser et committer le document de charte graphique iMERL (`context/brand/charte-graphique-imerl.md`, modifié mais non commité)</td><td>Objectif actif explicite de l'agent, travail déjà entamé et laissé en suspens. Le nouveau logo est utilisé partout (site, catalogue) sans document de référence</td></tr>
+<tr><td>`admin-operations`</td><td>Émettre la facture définitive ACE/RECIT, et clarifier la nature du fichier facture FASOVEIL non tracé</td><td>Reporté depuis hier, dossier simple à clore, 1 235 000 FCFA bloqués</td></tr>
+<tr><td>`commerce-ventes`</td><td>Décliner l'offre Caisse Claire (créée le 25/09, interne uniquement) en one-pager client, comme l'Audit Process, et nommer 2 à 3 cibles concrètes</td><td>C'est la seule offre récurrente du catalogue, donc le levier direct de l'objectif "1 contrat récurrent", et elle n'est aujourd'hui vendable à personne en l'état</td></tr>
+<tr><td>`conseil-missions`</td><td>Relancer le Laboratoire Citoyennetés sur l'offre FASOVEIL **si** la mission n'a pas été attribuée</td><td>10 jours de silence sur un dossier à 11,56 M FCFA. Conditionné au point de clarification ci-dessus</td></tr>
+<tr><td>CEO (moi)</td><td>Lancer `/update` pour combler le trou de traçabilité depuis le 25/09</td><td>Au moins 6 chantiers non tracés : offre Caisse Claire, protocole DMOC, charte iMERL, assets Winner, mémoire `rd-innovation`, dev Suivons+. Le planning du matin se dégrade si l'historique prend du retard</td></tr>
 </tbody></table></div>
-<p>Rien d'urgent aujourd'hui : <code>marketing-comm</code>, <code>commerce-ventes</code>, <code>rd-innovation</code>, <code>marque-personnelle</code>, <code>appel-a-propositions</code></p>
+<p><strong>Rien d'urgent aujourd'hui :</strong> <code>dev-tech</code>, <code>rd-innovation</code>, <code>carriere-candidatures</code>, <code>appel-a-propositions</code>, <code>veille-opportunites</code>.</p>
+<p>À noter, sans urgence du jour : le déploiement d'AAP Assistant stagne depuis 7 semaines et la fiche <code>carriere-candidatures</code> cite encore la candidature ODEPA (deadline 25/08) comme active. Les deux sont à nettoyer, mais ce n'est pas le jour.</p>
+<p>---</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">01/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">02/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-10-01.</p>
+      <p class="empty">Pas encore généré pour le 2026-10-02.</p>
       </div>
     </details>
   </div>
@@ -486,7 +496,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 01/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 02/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -508,7 +518,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 01/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 02/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
