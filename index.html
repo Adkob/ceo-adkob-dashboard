@@ -370,6 +370,8 @@
 
 
 
+
+
   /* Planning du jour (injecté automatiquement) */
   .planning{ display:grid; grid-template-columns:1fr; gap:1.4rem; margin-bottom:2.2rem; }
   .planning .pcard{ background:var(--paper-raised); border:1px solid var(--line); border-top:3px solid var(--brass); }
@@ -410,50 +412,51 @@
     </div>
     <div class="meta">
       <strong>CEO_ADKOB</strong>
-      14 agents · 1 compétence<br>mis à jour 04/10/2026
+      14 agents · 1 compétence<br>mis à jour 05/10/2026
     </div>
   </div>
 
   <div class="planning">
     <details class="pcard" open>
-      <summary>Planning du jour <span class="pdate">04/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Planning du jour <span class="pdate">05/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p>Contexte chargé. Aujourd'hui est un <strong>dimanche</strong>, jour non couvert par le rythme hebdomadaire de <code>ceo-adkob.md</code>. Je propose donc un focus restreint : ce qui se fait seul, sans contact client, et ce qui est bloqué par une décision de ta part.</p>
+      <p>📋 <strong>Planning du jour, lundi 5 octobre 2026</strong></p>
+<p><strong>Focus du jour (lundi) :</strong> planification et coordination. Agents principaux : CEO_ADKOB, <code>commerce-ventes</code>.</p>
 <p>---</p>
-<h3>📋 Planning du jour — dimanche 4 octobre 2026</h3>
-<p><strong>Focus (dimanche) :</strong> préparation pour lundi et échéances personnelles. Aucune prise de contact client proposée aujourd'hui.</p>
 <h4>⚠️ Échéances à surveiller</h4>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Échéance</th><th>Date limite</th><th>État</th></tr></thead><tbody>
-<tr><td>🔴 **CSRS, live d'information**</td><td>**mercredi 7 oct., 17h GMT**</td><td>**J+3.** Dossier apparemment déjà compilé (voir ci-dessous), statut d'envoi inconnu</td></tr>
-<tr><td>🔴 **AfrEA 2026, article complet**</td><td>30 sept., 17h GMT</td><td>**Dépassée de 4 jours.** Statut toujours inconnu de mon côté, signalé les 1er, 2 et 3 oct. sans réponse</td></tr>
+<tr><td>🔴 **CSRS, live d'information**</td><td>**mercredi 7 oct., 17h GMT**</td><td>**J+2.** Dossier PDF compilé dans `Claude_Cowork/CSRS-Chercheur-Associe/`, statut d'envoi toujours non confirmé</td></tr>
+<tr><td>🔴 **AfrEA 2026, article complet**</td><td>30 sept., 17h GMT</td><td>**Dépassée de 5 jours.** Signalée les 1, 2, 3 et 4 oct. sans réponse. Je ne la remets pas en tâche déléguable, voir plus bas</td></tr>
 <tr><td>AfrEA, inscription + visa Maroc + budget</td><td>conférence 23-27 nov.</td><td>7 semaines. Rien d'engagé. Le visa est le chemin critique</td></tr>
-<tr><td>Devis prospect plateforme stock/livraison</td><td>aucune</td><td>**16 jours** que le devis est "en préparation" (business-log, 18/09)</td></tr>
-<tr><td>FASOVEIL Capitalisation, réponse du Labo</td><td>aucune</td><td>12 jours de silence sur 11 560 000 FCFA</td></tr>
-<tr><td>ACE/RECIT, facture définitive</td><td>aucune</td><td>Mission livrée le 15/09, proforma émise le 22/09</td></tr>
+<tr><td>Devis prospect plateforme multi-entreprises</td><td>aucune</td><td>**17 jours** en préparation (business-log, 18/09)</td></tr>
+<tr><td>FASOVEIL Capitalisation, réponse du Labo</td><td>aucune</td><td>13 jours de silence sur 11 560 000 FCFA</td></tr>
+<tr><td>ACE/RECIT, facture définitive</td><td>aucune</td><td>1 235 000 FCFA nets, mission livrée le 15/09, proforma émise le 22/09</td></tr>
 </tbody></table></div>
+<p>---</p>
 <h4>Propositions par département</h4>
 <div class="ptable-wrap"><table>
 <thead><tr><th>Agent</th><th>Proposition du jour</th><th>Pourquoi maintenant</th></tr></thead><tbody>
-<tr><td>`carriere-candidatures`</td><td>Faire le point CSRS et préparer le live de mercredi : questions à poser, points à valider avant envoi</td><td>J+3. **Écart détecté :** le dossier `Claude_Cowork/CSRS-Chercheur-Associe/` contient un `Candidature_Dr-KOBENAN_CSRS-Chercheur-Associe.pdf` complet + pièces justificatives compilées + CV + lettre, alors que la mémoire du workspace (datée du 05/09) dit "rien n'est soumis, documents manquants". L'un des deux est faux</td></tr>
-<tr><td>`commerce-ventes`</td><td>Finaliser le devis du prospect plateforme multi-entreprises (TJM 100 000 FCFA, MVP J+14 / périmètre complet J+21) pour envoi lundi matin</td><td>C'est le seul prospect vivant du business-log, et il attend depuis 16 jours. Un devis qui ne part pas est un deal perdu</td></tr>
-<tr><td>`admin-operations`</td><td>Boucler la facture définitive ACE/RECIT (1 235 000 FCFA nets) et lever l'incohérence du fichier `Facture_Definitive_Capitalisation_FASOVEIL_iMERL.docx`</td><td>Cash direct sur une mission déjà livrée. Et une facture **définitive** existe pour une offre officiellement toujours "en attente de réponse" : soit tu as gagné FASOVEIL Capitalisation et `CONTEXT.md` est périmé, soit ce fichier est prématuré</td></tr>
-<tr><td>`reseau-communautes`</td><td>Lancer l'inscription AfrEA en ligne (kobdavi@gmail.com) et la demande de lettre d'invitation pour le visa</td><td>Deux démarches en ligne, faisables un dimanche. Un visa Maroc ne s'obtient pas en 10 jours</td></tr>
-<tr><td>`dev-tech`</td><td>Débloquer un seul déploiement aujourd'hui : acheter `imerl.org` et le brancher sur le projet Vercel `i-merl` (~6 500 FCFA/an)</td><td>Cinq projets finis en code mais pas en ligne. Celui-ci est le moins cher, le plus rapide, et c'est ta propre vitrine : le cabinet vend du numérique depuis un `adkob.github.io`</td></tr>
+<tr><td>`commerce-ventes`</td><td>**(1)** Finaliser et te transmettre le devis de la plateforme stock/commandes/livraison (TJM 100 000 FCFA, MVP J+14, périmètre complet J+21) pour envoi WhatsApp aujourd'hui. **(2)** Préparer un message de relance au Laboratoire Citoyennetés sur l'offre Capitalisation</td><td>C'est le jour du commerce et le seul prospect vivant du business-log attend depuis 17 jours. Un devis qui ne part pas est un deal perdu. La relance FASOVEIL dépend du point admin ci-dessous : ne pas relancer si la mission est déjà gagnée</td></tr>
+<tr><td>`admin-operations`</td><td>Émettre la facture définitive ACE/RECIT (1 235 000 FCFA nets, date + coordonnées de paiement à compléter) et lever l'ambiguïté FASOVEIL</td><td>Cash direct sur une mission livrée. Et `context/import/` contient à la fois une proforma **et** une facture définitive Capitalisation FASOVEIL, pour une offre que `CONTEXT.md` décrit comme "en attente de réponse". Les deux ne peuvent pas être vrais</td></tr>
+<tr><td>`carriere-candidatures`</td><td>Préparer le live CSRS de mercredi : questions à poser, points à valider, et trancher l'état réel du dossier</td><td>J+2. Écart non résolu : le dossier compilé existe (PDF + pièces + CV + lettre), la mémoire du workspace dit encore "rien n'est soumis"</td></tr>
+<tr><td>`reseau-communautes`</td><td>Lancer l'inscription AfrEA (kobdavi@gmail.com) et la demande de lettre d'invitation pour le visa Maroc</td><td>Démarches indépendantes du sort de l'article. Un visa Maroc ne s'obtient pas en 10 jours, et aucun financement AfrEA n'est prévu</td></tr>
+<tr><td>`dev-tech`</td><td>Arbitrer l'ordre de mise en ligne des projets finis (i-merl/`imerl.org`, INSPIR'RH site, EVIDENCES Lot 5, BEDSAH Lots 4-5, AAP Assistant) et exécuter le premier</td><td>Cinq projets terminés en code, aucun en ligne. Lundi est le bon jour pour fixer l'ordre plutôt que d'en pousser un au hasard. Le moins cher et le plus rapide reste `imerl.org` (~6 500 FCFA/an), et c'est ta propre vitrine</td></tr>
 </tbody></table></div>
-<p><strong>Rien d'urgent aujourd'hui :</strong> <code>marketing-comm</code> (objectif CultureDash bloqué par l'arbitrage ci-dessous), <code>rd-innovation</code>, <code>conseil-missions</code>, <code>marque-personnelle</code>, <code>appel-a-propositions</code> (aucun AAP ouvert), <code>veille-opportunites</code> (en pause depuis le 14/08 sur ta décision, je ne la réactive pas sans ton accord).</p>
+<p><strong>En attente de ta réponse, pas d'une délégation :</strong> <code>savoirs-presentations</code> (article AfrEA : impossible de proposer quoi que ce soit avant de savoir si le dépôt a eu lieu).</p>
+<p><strong>Rien d'urgent aujourd'hui :</strong> <code>marketing-comm</code> et <code>rd-innovation</code> (objectifs CultureDash et MERL Reporter bloqués par l'arbitrage ci-dessous), <code>conseil-missions</code>, <code>marque-personnelle</code>, <code>appel-a-propositions</code> (aucun AAP ouvert), <code>veille-opportunites</code> (en pause depuis le 14/08 sur ta décision, je ne la réactive pas sans ton accord).</p>
 <p>---</p>
-<h4>Ce qui relève de toi, pas d'une délégation</h4>
-<p><strong>1. AfrEA.</strong> Je l'ai signalé trois jours de suite, je ne le remets pas dans le tableau comme une tâche à déléguer. Une seule question : <strong>l'article a-t-il été déposé, oui ou non ?</strong> Si oui, je trace et on passe à la présentation orale. Si non, la présentation acceptée à Marrakech est probablement perdue, et la décision du jour est alors budgétaire : est-ce qu'on engage quand même les frais de déplacement pour y aller comme participant.</p>
-<p><strong>2. CultureDash.</strong> Toujours objectif court terme n°1 de <code>CONTEXT.md</code>, toujours sans canal depuis la clôture Africalia du 17 septembre, zéro avancement depuis le 4 août. Rebranché sur ton poste à La Fabrique, ou déprioritisé explicitement. Tant que ce n'est pas tranché, trois agents pilotent sur un objectif mort.</p>
-<p><strong>3. Suivi du workspace.</strong> <code>HISTORY.md</code> s'arrête au 25/09. Au moins cinq éléments ont bougé depuis sans être tracés (offre Caisse Claire, <code>projects/compta</code>, <code>protocole-dmoc.md</code>, facture définitive FASOVEIL, dossier CSRS). Un <code>/update</code> avant la prochaine session de décision.</p>
+<h4>Trois décisions qui t'appartiennent</h4>
+<p>1. <strong>AfrEA, une seule question : l'article a-t-il été déposé avant le 30 septembre, oui ou non ?</strong> Si oui, je trace et on bascule sur la présentation orale. Si non, la présentation acceptée est probablement perdue et la décision devient budgétaire : y aller comme participant, ou abandonner Marrakech.</p>
+<p>2. <strong>CultureDash.</strong> Toujours objectif court terme n°1 de <code>CONTEXT.md</code>, sans canal depuis la clôture Africalia du 17 septembre, zéro avancement depuis le 4 août. À rebrancher sur ton poste à La Fabrique ou à déprioriser explicitement. Trois agents pilotent aujourd'hui sur un objectif sans accès au client.</p>
+<p>3. <strong><code>/update</code> du workspace.</strong> <code>HISTORY.md</code> s'arrête au 25/09. Au moins cinq éléments ont bougé depuis sans trace : offre Caisse Claire, <code>projects/compta</code>, <code>protocole-dmoc.md</code>, facture définitive FASOVEIL, dossier CSRS.</p>
 <p>Dis-moi lesquelles tu valides, je délègue immédiatement selon le protocole POSER.</p>
       </div>
     </details>
     <details class="pcard" open>
-      <summary>Veille d'opportunités <span class="pdate">04/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Veille d'opportunités <span class="pdate">05/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
-      <p class="empty">Pas encore généré pour le 2026-10-04.</p>
+      <p class="empty">Pas encore généré pour le 2026-10-05.</p>
       </div>
     </details>
   </div>
@@ -502,7 +505,7 @@
   <div class="projects-row">
   <div class="projects">
     <details class="pcard">
-      <summary>Projets en cours <span class="pdate">mis à jour 04/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets en cours <span class="pdate">mis à jour 05/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Statut</th><th>Prochaine étape</th></tr></thead>
@@ -524,7 +527,7 @@
 
   <div class="projects done">
     <details class="pcard">
-      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 04/10/2026</span><span class="pchev">›</span></summary>
+      <summary>Projets terminés (+95%) <span class="pdate">mis à jour 05/10/2026</span><span class="pchev">›</span></summary>
       <div class="pbody">
         <div class="ptable-wrap"><table>
           <thead><tr><th>Projet</th><th>Livré le</th><th>État</th></tr></thead>
